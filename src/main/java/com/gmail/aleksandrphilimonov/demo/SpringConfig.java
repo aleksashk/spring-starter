@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 public class SpringConfig {
 
-    @Bean
+    @Bean("carBean")
     public Car getCar() {
         return new Car();
     }
