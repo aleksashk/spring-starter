@@ -9,7 +9,7 @@ public class Car {
     @Autowired
     private CarEngine carEngine;
 
-    @Value("${car.manufacturer}")
+    @Value("${car.manufacturer:Skoda}")
     private String manufacturer;
 
     private String model;
