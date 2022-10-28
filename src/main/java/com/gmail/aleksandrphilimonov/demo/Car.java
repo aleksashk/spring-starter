@@ -12,11 +12,24 @@ public class Car {
     @Value("${car.manufacturer}")
     private String manufacturer;
 
+    private String model;
+
+    public Car(String model) {
+        this.model = model;
+    }
+
+    public Car() {
+    }
+
     public void getEngineModel() {
         System.out.println(carEngine.getEngineType());
     }
 
     public String getManufacturer() {
         return manufacturer;
+    }
+
+    public String getModel() {
+        return model;
     }
 }
