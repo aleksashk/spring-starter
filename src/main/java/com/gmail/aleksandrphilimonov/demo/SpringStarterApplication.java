@@ -12,6 +12,7 @@ public class SpringStarterApplication {
 
         Car car = ctx.getBean("beanFromClass", Car.class);
         car.getEngineModel();
+        System.out.println(car.getManufacturer());
     }
 
 }
