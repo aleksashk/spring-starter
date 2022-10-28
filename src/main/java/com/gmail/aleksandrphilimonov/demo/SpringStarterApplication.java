@@ -16,7 +16,7 @@ public class SpringStarterApplication {
 //        Car car = ctx.getBean(Car.class);
 //        car.getEngineModel();
 
-        Car car = ctx.getBean("carBean", Car.class);
+        Car car = ctx.getBean("beanFromClass", Car.class);
         car.getEngineModel();
 
     }
